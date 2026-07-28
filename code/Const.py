@@ -1,0 +1,18 @@
+#C
+COLOR_PINK = (255, 174, 201)
+COLOR_WHITE = (255, 255, 255)
+COLOR_BLACK = (0, 0, 0)
+COLOR_GRAY = (128, 128, 128)
+
+#M
+MENU_OPTION = ('NEW GAME 1P',
+               'NEW GAME 2P - COOPERATIVE',
+               'NEW GAME 2P - COOPERATIVE',
+               'SCORE',
+               'EXIT')
+
+
+# W
+WIN_WIDTH = 1620
+WIN_HEIGHT = 980
+
