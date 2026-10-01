@@ -37,12 +37,12 @@ class Menu:
                     pygame.quit()  # Close Window
                     quit()  # end pygame
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_DOWN: #Down Key
+                    if event.key == pygame.K_s: #Down Key
                         if menu_option < len(MENU_OPTION) - 1:
                             menu_option += 1
                         else:
                             menu_option = 0
-                    if event.key == pygame.K_UP: # Up Key
+                    if event.key == pygame.K_w: # Up Key
                         if menu_option > 0:
                             menu_option -= 1
                         else:

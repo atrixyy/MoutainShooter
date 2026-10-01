@@ -4,6 +4,8 @@ from abc import ABC, abstractstaticmethod, abstractmethod
 
 import pygame.image
 
+from code.Const import ENTITY_SIZE
+
 
 class Entity(ABC):
     def __init__(self, name: str, position: tuple):
@@ -11,6 +13,14 @@ class Entity(ABC):
         self.surf = pygame.image.load('./asset/' + name + '.png').convert_alpha()
         self.rect = self.surf.get_rect(left=position[0], top=position[1])
         self.speed = 0
+
+        if name in ENTITY_SIZE:
+            size = ENTITY_SIZE[name]
+            width = int(self.surf.get_width() * size)
+            height = int(self.surf.get_height() * size)
+            self.surf = pygame.transform.scale(self.surf, (width, height))
+
+        self.rect = self.surf.get_rect(left=position[0], top=position[1])
 
     @abstractmethod
     def move(self, ):
