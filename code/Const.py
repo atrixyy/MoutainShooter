@@ -21,9 +21,13 @@ ENTITY_SPEED = {
     'Level1Bg1' : 2,
     'Level1Bg2' : 4,
     'Player1' : 3,
+    'Player1Shot' : 3,
     'Player2' : 3,
+    'Player2Shot' : 3,
     'Enemy1' : 2,
+    'Enemy1Shot' : 5,
     'Enemy2' : 1,
+    'Enemy2Shot' : 5,
 }
 
 ENTITY_HEALTH = {
@@ -50,6 +54,18 @@ ENTITY_SIZE = {
     'Player2' : 0.176,
     'Enemy1' : 0.5,
     'Enemy2' : 0.5,
+    'Player1Shot' : 0.2,
+    'Player2Shot' : 0.0222,
+    'Enemy1Shot' : 0.2,
+    'Enemy2Shot' : 0.22,
+}
+
+ENTITY_SHOT_DELAY = {
+    'Player1' : 20,
+    'Player2' : 15,
+    'Enemy1': 100,
+    'Enemy2': 200,
+
 }
 
 #M
